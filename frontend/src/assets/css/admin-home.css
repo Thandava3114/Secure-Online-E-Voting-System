@@ -1,0 +1,102 @@
+/* Background styling */
+.home-container {
+  background: linear-gradient(
+      to right, 
+      rgba(40, 0, 70, 0.8), 
+      rgba(20, 20, 20, 0.4)
+  ), 
+  url("../images/bg2.webp") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+/* Admin Greeting */
+.greeting {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #ffc600, #d8b24a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 10px rgba(255, 230, 120, 0.8);
+  animation: fadeIn 1.5s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+/* Style the big letters for both W and A */
+.big-letter {
+  font-size: 80px;
+  color: #ffd700; /* Brighter gold */
+  text-shadow: 4px 4px 12px rgba(255, 215, 0, 1);
+  font-weight: 1000;
+  vertical-align: text-bottom;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Buttons container */
+.button-container {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  gap: 30px;
+}
+
+/* Stylish Buttons */
+.home-button {
+  width: 230px;
+  padding: 16px;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Unique gradient colors for each button */
+.home-button:nth-child(1) {
+  background: linear-gradient(45deg, #a60a7a, #f80759); /* Purple-Pink */
+  color: white;
+}
+
+.home-button:nth-child(2) {
+  background: linear-gradient(45deg, #09767e, #e50a0e); /* Orange-Red */
+  color: white;
+}
+
+.home-button:nth-child(3) {
+  background: linear-gradient(45deg, #2626aa, #c50f9b); /* Soft Orange */
+  color: white;
+}
+
+.home-button:nth-child(4) {
+  background: linear-gradient(45deg, #8e9508, #e6057d); /* Soft Orange */
+  color: white;
+}
+
+/* Hover Effects */
+.home-button:hover {
+  transform: scale(1.07);
+  opacity: 0.95;
+}

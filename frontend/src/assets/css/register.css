@@ -1,0 +1,104 @@
+.register-page {
+    background: url('../images/reggister.webp') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    color: white;
+    
+}
+
+/* Centering the Form */
+.registration-container {
+    width: 450px;
+    background: rgba(0, 0, 0, 0.8); /* Dark Transparent Black */
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 123, 204, 0.5), 0 0 15px rgba(0, 0, 0, 0.6); /* Blue & Black Glow */
+    text-align: center;
+    margin: 80px auto;
+    color: white;
+    border: 2px solid #007acc; /* Bright Blue Border */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Form Title */
+.registration-container h2 {
+     /* Extra Bold */
+    margin-bottom: 20px;
+    color:white; /* Neon Blue */
+    text-shadow: 2px 2px 10px rgba(0, 123, 204, 0.8); /* Soft Blue Glow */
+}
+
+/* Input Container */
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+    color: white;
+}
+
+/* Thick and Styled Labels */
+.input-container label {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white !important;
+}
+
+/* Input Fields */
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #007acc; /* Blue Border */
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(20, 20, 20, 0.9); /* Dark Transparent */
+    box-shadow: 2px 2px 10px rgba(0, 123, 204, 0.4), 0 0 8px rgba(0, 0, 0, 0.3); /* Soft Blue & Black Glow */
+}
+
+/* Focus Effect for Inputs */
+.input-container input:focus {
+    border-color: #00aaff;
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(0, 174, 255, 0.8), 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4444;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Button Styling */
+.reg-btn {
+    width: 100%;
+    background: #004466; /* Deep Blue */
+    color: #00ccff; /* Neon Cyan */
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 12px rgba(0, 174, 255, 0.7), 0 0 15px rgba(0, 0, 0, 0.5); /* Neon Blue Glow */
+    transition: 0.3s ease-in-out;
+}
+
+.reg-btn:hover {
+    background: #006699; /* Slightly Lighter Blue */
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 174, 255, 1), 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+}

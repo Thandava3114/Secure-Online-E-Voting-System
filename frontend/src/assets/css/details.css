@@ -1,0 +1,170 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.personal-page{
+  background-color: whitesmoke;
+  background-size: cover;
+  
+}
+
+/* Container Styling */
+.personal-details-container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 1px auto;
+}
+
+/* Form Title */
+.personal-details-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Input Field Styling */
+.input-container {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-container label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  color: #555;
+}
+
+.input-container input,
+.input-container select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #45a049;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Biometric Section */
+.biometric-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  /* Wrap items for smaller screens */
+  margin-top: 15px;
+}
+
+.biometric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.biometric-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+/* Biometric Button */
+.biometric-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  font-size: 14px;
+}
+
+.biometric-btn:hover {
+  background: #45a049;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 90%;
+  background: purple;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background: #4b0082;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .personal-details-container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .biometric-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .biometric-item {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .personal-details-container {
+      padding: 10px;
+  }
+
+  .input-container label {
+      font-size: 12px;
+  }
+
+  .input-container input,
+  .input-container select {
+      padding: 8px;
+      font-size: 12px;
+  }
+
+  .biometric-item img {
+      width: 70px;
+      height: 70px;
+  }
+
+  .biometric-btn {
+      padding: 6px;
+      font-size: 14px;
+  }
+
+  .submit-btn {
+      font-size: 14px;
+      padding: 10px;
+  }
+}

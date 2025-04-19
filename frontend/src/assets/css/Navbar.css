@@ -1,0 +1,122 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Home on the left, Login & Register on the right */
+    align-items: center;
+    padding: 15px 50px;
+    /* background: linear-gradient(135deg, rgba(0, 0, 70, 0.89), rgba(77, 80, 0, 0.9));  */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98%;
+    height: 12vh;
+    z-index: 1000;
+    /* box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);  */
+    /* border: 2px solid rgba(0, 255, 255, 0.6);  */
+}
+
+/* Navbar List */
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Left-aligned Home */
+.navbar .left-nav {
+    margin-right: auto;
+}
+
+/* Right-aligned Login & Register */
+.navbar .right-nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Common Button Styling */
+.navbar .nav-item button {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    padding: 12px 28px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Neon Text Effect */
+.navbar .nav-link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Hover Effects */
+.navbar .nav-item button:hover {
+    transform: scale(1.1);
+    border-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Neon Glow Effect for Each Button */
+.t { 
+    border-color: #ffc107; /* Gold */
+    color: #ffc107;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.8);
+}
+.t:hover {
+    background: rgba(255, 193, 7, 0.2);
+    box-shadow: 0 0 25px rgba(255, 193, 7, 1);
+}
+
+.s {
+    border-color: #00ff7f; /* Neon Green */
+    color: #00ff7f;
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.8);
+}
+.s:hover {
+    background: rgba(0, 255, 127, 0.2);
+    box-shadow: 0 0 25px rgba(0, 255, 127, 1);
+}
+
+.u {
+    border-color: #007bff; /* Bright Blue */
+    color: #007bff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+}
+.u:hover {
+    background: rgba(0, 123, 255, 0.2);
+    box-shadow: 0 0 25px rgba(0, 123, 255, 1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .left-nav, .right-nav {
+        margin: 0;
+    }
+
+    .navbar .nav-item button {
+        width: 100%;
+        text-align: center;
+    }
+}

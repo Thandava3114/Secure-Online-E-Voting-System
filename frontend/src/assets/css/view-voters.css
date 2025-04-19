@@ -1,0 +1,78 @@
+/* Outer container with full viewport height */
+.voter-container {
+  background: linear-gradient(
+      to right,
+      rgba(40, 0, 70, 0.31),
+      rgba(20, 20, 20, 0.4)
+    ),
+    url("../images/bg1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  padding-top: 20px; /* Ensures there's space above child elements */
+}
+
+/* Main container for viewing voters, with margin at the top */
+.view-voters-container {
+  /* Combined margin-top and horizontal auto in one line */
+  margin: 20px auto 0 auto;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 10px;
+  /* Clearfix to ensure floated elements are accounted for */
+  overflow: auto;
+}
+
+/* Send Mails Button */
+.send-mails-btn {
+  float: right;
+  margin-bottom: 10px;
+  padding: 10px 20px; /* Increased padding for a bigger button */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px; /* Slightly rounded corners */
+  cursor: pointer;
+  font-size: 20px; /* Increased font size */
+  background: linear-gradient(
+    135deg,
+    #009688, /* Teal */
+    #8bc34a  /* Lime Green */
+  );
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.send-mails-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #03c1ae, /* Darker teal */
+    #c21078  /* Darker green */
+  );
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Container for the table */
+.table-container {
+  margin-top: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-size: 21px;
+}
